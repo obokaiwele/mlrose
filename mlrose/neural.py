@@ -511,6 +511,7 @@ class BaseNeuralNetwork(BaseEstimator, metaclass=ABCMeta):
         node_list = [input_nodes] + self.hidden_nodes + [output_nodes]
 
         num_nodes = 0
+        self.classes_ = np.unique(y)
 
         for i in range(len(node_list) - 1):
             num_nodes += node_list[i]*node_list[i+1]
