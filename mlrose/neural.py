@@ -9,7 +9,6 @@
 from abc import ABCMeta, abstractmethod
 
 import numpy as np
-import six
 from sklearn.base import BaseEstimator, ClassifierMixin, RegressorMixin
 from sklearn.metrics import log_loss, mean_squared_error
 
